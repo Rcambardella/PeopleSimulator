@@ -1,7 +1,11 @@
 class Person {
 	public int age;
 	private String name;
-
+    private int immuneStrength;
+    private int chanceOfDisease;
+    private int wealth;
+    private boolean disease;
+    public double susceptibility;
 	public Person(int age, String name) {
 		this.name = name;
 		this.age = age;
@@ -32,5 +36,25 @@ class Person {
 	public void hadBirthday() {
 		age++;
 	}
+
+    public int getImmuneStrength()
+  {
+    return immuneStrength;
+  }
+
+  public int getChanceOfDisease()
+  {
+    return chanceOfDisease;
+  }
+
+  public int getWealth()
+  {
+    return wealth;
+  }
+
+  public boolean getDiseases()
+  {
+    return disease;
+  }
 
 }
