@@ -1,19 +1,24 @@
 class Person {
 	public int age;
 	private String name;
-    private int immuneStrength;
-    private int chanceOfDisease;
+    private double immuneStrength;
+    private double chanceOfDisease;
     private int wealth;
     private boolean disease;
+    private boolean depressed;
     public double susceptibility;
 	public Person(int age, String name) {
 		this.name = name;
 		this.age = age;
+        this.immuneStrength = Math.random();
+        this.chanceOfDisease = Math.random();
+        this.susceptibility = Math.random();
 	}
 
 	public Person() {
 		this.name = "Brad";
 		this.age = 37;
+
 	}
 
 	public boolean olderThan(int otherAge) {
@@ -37,12 +42,12 @@ class Person {
 		age++;
 	}
 
-    public int getImmuneStrength()
+    public double getImmuneStrength()
   {
     return immuneStrength;
   }
 
-  public int getChanceOfDisease()
+  public double getChanceOfDisease()
   {
     return chanceOfDisease;
   }
@@ -55,6 +60,11 @@ class Person {
   public boolean getDiseases()
   {
     return disease;
+  }
+
+  public boolean getDepressed()
+  {
+    return depressed;
   }
 
 }

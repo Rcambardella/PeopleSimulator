@@ -12,16 +12,7 @@ public Diseases(){
     diseases.add(new Disease("Diabetes", 0.15, 0.11 , 0)); // 2.9% of total deaths come from Lower Respiratory Disease
     diseases.add(new Disease("Influenza", 0.05, 0.15 , .35)); // 2.1% of total deaths come from Lower Respiratory Disease
     diseases.add(new Disease("Kidney Disease", 0.20, 0.06 , 0)); // 1.8% of total deaths come from Lower Respiratory Disease
-    diseases.add(new Disease("Depression", 0.35, 0.25 , 0)); // 1.6% of total deaths come from Lower Respiratory Disease
-
-
-
-
-
-
-
-
-
+    diseases.add(new Disease("Suicide", 0.35, 0.25 , 0)); // 1.6% of total deaths come from Lower Respiratory Disease
 }
 
 
