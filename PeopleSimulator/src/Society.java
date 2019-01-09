@@ -23,11 +23,22 @@ class Society{
 {
   for( int i = 0; i < population; i++)
   {
-    //if(the parent had the disease then there will be a more likely chance for them to get it)
-    if(people.get(i).getImmuneStrength() <= .35)
+    if(people.get(i).getImmuneStrength() <= .30)
     {
-
+        if(people.get(i).getChanceOfDisease() >= .45)
+        {
+            //add potnetial diseases
+        }
     }
+
+    if(people.get(i).getImmuneStrength() >= .35)
+    {
+        if(people.get(i).getChanceOfDisease() >= .45)
+        {
+            //add potnetial diseases
+        }
+    }
+
   }
 }
 

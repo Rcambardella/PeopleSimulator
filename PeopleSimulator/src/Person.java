@@ -7,12 +7,14 @@ class Person {
     private boolean disease;
     private boolean depressed;
     public double susceptibility;
+    public boolean deceased;
 	public Person(int age, String name) {
 		this.name = name;
 		this.age = age;
         this.immuneStrength = Math.random();
         this.chanceOfDisease = Math.random();
         this.susceptibility = Math.random();
+        deceased = false;
 	}
 
 	public Person() {
@@ -51,6 +53,32 @@ class Person {
   {
     return chanceOfDisease;
   }
+public double num;
+  public void setChanceOfDisease()
+  {
+
+      //people.get(i).getImmuneStrength()
+      if(immuneStrength <= .3)
+      {
+      num = Math.random() * 9;
+      if(num < 4) {
+          num = Math.random() * 9;
+          if(num < 4) {
+          num = Math.random() * 9;
+          if(num < 4) {
+          num = Math.random() * 9;
+          if(num < 4) {
+          num = Math.random() * 9;
+          if(num < 4) {
+          num = Math.random() * 9;
+      }
+      }
+      }
+      }
+      }
+      }
+    chanceOfDisease = num/10;
+  }
 
   public int getWealth()
   {
@@ -65,6 +93,15 @@ class Person {
   public boolean getDepressed()
   {
     return depressed;
+  }
+
+ public boolean isDead(){
+		return deceased;
+	}
+
+  public void markAsDeceased()
+  {
+    deceased = true;
   }
 
 }

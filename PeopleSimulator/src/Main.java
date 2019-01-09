@@ -5,8 +5,20 @@ class Main {
 
 		Society peopleTown = new Society(10000);
 
-        //gets the name of the person in the people arrayList at position 8000
-        System.out.println(peopleTown.people.get(8000).getName());
+
+        for(int i = 0; i<10000; i++)
+        {
+        System.out.println(peopleTown.people.get(i).getName() + " " + peopleTown.people.get(i).getImmuneStrength());
+        }
+
+            //System.out.println("CEMETARY:");
+        //for(int i = 0; i<10000; i++)
+       // {
+       // if(peopleTown.people.get(i).isDead() == true);
+       // {
+         //   System.out.println(peopleTown.people.get(i).getName() + " " + peopleTown.people.get(i).getAge() + " Cause of death: ");
+       // }
+        //}
 	}
 
 }
