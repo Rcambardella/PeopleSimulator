@@ -22,14 +22,15 @@ class Society{
 
     public void diseasesBornWith()
 {
-    num2 = (math.Random() * 4)
+     int num2 = (int) (Math.random() * 4) + 5;
+     num2 = num2/10;
   for( int i = 0; i < population; i++)
   {
     if(people.get(i).getImmuneStrength() <= .30)
     {
         if(people.get(i).getChanceOfDisease() >= .45)
         {
-          people.get(i).diseaseName = diseases.diseases.get(i).getName();
+          people.get(i).diseaseName = diseases.diseases.get(num2).getName();
         }
     }
 
