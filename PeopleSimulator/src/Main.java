@@ -8,7 +8,7 @@ class Main {
 
         for(int i = 0; i<10000; i++)
         {
-        System.out.println(peopleTown.people.get(i).getName() + " " + peopleTown.people.get(i).getImmuneStrength());
+        System.out.println(peopleTown.people.get(i).getName() + " " + peopleTown.people.get(i).getImmuneStrength() + " " + peopleTown.people.get(i).getDisease());
         }
 
             //System.out.println("CEMETARY:");

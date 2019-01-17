@@ -3,6 +3,7 @@ import java.util.*;
 class Society{
 	//this declares a new instance variable... an ArrayList for people
 	List<Person> people = new ArrayList<Person>();
+    Diseases diseases = new Diseases();
 
 
 	public int population;
@@ -21,13 +22,14 @@ class Society{
 
     public void diseasesBornWith()
 {
+    num2 = (math.Random() * 4)
   for( int i = 0; i < population; i++)
   {
     if(people.get(i).getImmuneStrength() <= .30)
     {
         if(people.get(i).getChanceOfDisease() >= .45)
         {
-            //add potnetial diseases
+          people.get(i).diseaseName = diseases.diseases.get(i).getName();
         }
     }
 

@@ -1,6 +1,6 @@
 class Disease
 {
-private String name;
+public String name;
 private double lethality;
 private double infectious;
 private double contagious;
